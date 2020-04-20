@@ -32,9 +32,9 @@ mp.events.add('render', () => {
         mp.game.graphics.drawLine(selObj.position.x, selObj.position.y - 1.0, selObj.position.z, selObj.position.x, selObj.position.y + 1.0, selObj.position.z, 255, 0, 0, 255);
         mp.game.graphics.drawLine(selObj.position.x, selObj.position.y, selObj.position.z - 1.0, selObj.position.x, selObj.position.y, selObj.position.z + 1.0, 0, 255, 0, 255);
 
-        xbox = mp.game.graphics.world3dToScreen2d(selObj.position.x + 1.5, selObj.position.y, selObj.position.z);
-        ybox = mp.game.graphics.world3dToScreen2d(selObj.position.x, selObj.position.y + 1.5, selObj.position.z);
-        zbox = mp.game.graphics.world3dToScreen2d(selObj.position.x, selObj.position.y, selObj.position.z + 1.5);
+        xbox = mp.game.graphics.world3dToScreen2d(selObj.position.x + 1.0, selObj.position.y, selObj.position.z);
+        ybox = mp.game.graphics.world3dToScreen2d(selObj.position.x, selObj.position.y + 1.0, selObj.position.z);
+        zbox = mp.game.graphics.world3dToScreen2d(selObj.position.x, selObj.position.y, selObj.position.z + 1.0);
         switchbox = mp.game.graphics.world3dToScreen2d(selObj.position.x - 0.8, selObj.position.y - 0.8, selObj.position.z);
         if(switchbox != undefined) {
             groundbox = {x: switchbox.x+0.065, y: switchbox.y};
